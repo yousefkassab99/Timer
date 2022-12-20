@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+
+/* Global styling */
+body {
+    background-color: #17171a;
+    color: rgb(255, 255, 255);
+    height: 50vh;
+    font-family: arial,
+        sans-serif;
+}
+
+
+/* Navigate styling start */
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 3vh;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 13px;
+    font-size: 13px;
+}
+
+header nav ul li a img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+}
+
+header nav ul li a img:hover {
+    background-color: rgba(243, 244, 246, 0.08);
+}
+
+header nav ul li svg {
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+header nav ul .left-box {
+    display: flex;
+    gap: 15px;
+    margin-right: 12px;
+    margin-top: -5px;
+}
+
+header nav ul .left-box li a:hover {
+    text-decoration: underline;
+}
+
+/* Navigate styling End */
+
+
+/* styling the main start  */
+main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container {
+    width: 50%;
+    border: 1px solid #343638;
+    border-radius: 8px;
+    height: 44vh;
+}
+
+main .container .selection {
+    height: 48px;
+    border-bottom: 1px solid #343638;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .container .selection h1 {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 48px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #80868b;
+    cursor: pointer;
+}
+
+
+main .container .selection h1.active {
+    border-bottom: 3px solid #67a0fa;
+    color: #67a0fa;
+}
+
+
+
+main .container .body {
+    height: 60%;
+    border-bottom: 1px solid #343638;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 40px;
+    gap: 50px;
+
+}
+
+main .container .body .counter {
+    font-size: 20px;
+    border-bottom: 1px solid #343638;
+    padding-bottom: 25px;
+    display: flex;
+}
+
+main .container .body h2 {
+    font-size: 20px;
+    background-color: rgb(37, 26, 26);
+    display: none;
+}
+
+main .container .body div span {
+    font-size: 50px;
+}
+
+main .container .body div span#seconds,
+main .container .body div span#minutes
+ {
+    margin-left: 20px;
+}
+
+
+main .container .buttons {
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main .container .buttons .left button {
+    color: #202124;
+    background-color: #67a0fa;
+    border: 1px solid #67a0fa;
+    border-radius: 2px;
+    width: 85px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    outline: none;
+
+}
+
+main .container .buttons .left button:nth-child(1):hover {
+    background-color: #1B66C9;
+    border: 1px solid #050607;
+
+}
+
+main .container .buttons .left button:nth-child(2) {
+    background-color: #67a0fa;
+    margin-left: 15px;
+
+}
+
+main .container .buttons .left button:nth-child(2):hover {
+    background-color: #1B66C9;
+    border: 1px solid #050607;
+    color: rgb(255, 255, 255);
+}
